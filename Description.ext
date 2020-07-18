@@ -1,0 +1,29 @@
+author			= "NoYa";
+onLoadName		= "NY MCC mission template";
+onLoadMission	= "Have a good time";
+
+allowFunctionsLog = 1;
+
+class Header
+{
+	gameType =  Coop;	// Game type
+	minPlayers =  1;	// minimum number of players the mission supports
+	maxPlayers = 40;	// maximum number of players the mission supports
+};
+
+ReviveMode = 1;                         //0: disabled, 1: enabled, 2: controlled by player attributes
+ReviveUnconsciousStateMode = 0;         //0: basic, 1: advanced, 2: realistic
+ReviveRequiredTrait = 0;                //0: none, 1: medic trait is required
+ReviveRequiredItems = 2;                //0: none, 1: medkit, 2: medkit or first aid kit
+ReviveRequiredItemsFakConsumed = 1;     //0: first aid kit is not consumed upon revive, 1: first aid kit is consumed
+ReviveDelay = 16;                        //time needed to revive someone (in secs)
+ReviveMedicSpeedMultiplier = 4;         //speed multiplier for revive performed by medic
+ReviveForceRespawnDelay = 8;            //time needed to perform force respawn (in secs)
+ReviveBleedOutDelay = 300;              //unconscious state duration (in secs)
+
+respawn  =  "BASE" ; 
+respawnTemplates[]  =  { "MenuPosition" };
+respawnOnStart = 0;
+respawnDelay = 1;
+
+DisabledAI = 1;
